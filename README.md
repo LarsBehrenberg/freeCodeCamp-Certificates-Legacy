@@ -1,6 +1,6 @@
 # freeCodeCampChallenges
 My journey of getting the Front End Development Certificate on FreeCodeCamp.org
-@@ -0,0 +1,60 @@
+
 # Free Code Camp Projects
 
 Collection of projects I'm doing while working through the [Free Code Camp](http://www.freecodecamp.com) full stack web developer certifications. Original from KaliaHaze.
