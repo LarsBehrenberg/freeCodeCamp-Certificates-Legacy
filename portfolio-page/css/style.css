@@ -1,0 +1,88 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+   z-index: 99;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 30px;
+  width: 80%;
+  background-color: white;
+}
+
+
+
+/* Make Image Round */
+.round-image-border {
+    border-color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    float: right;
+}
+
+/* Fontsize */
+.fontsize {
+   font-size:20px;
+}
+body{
+   background-color:grey;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: lightgrey;
+}
+
+.footer {
+  background-color: lightgrey;
+}
+
+/*Social Media Icons are coming next, note:use font-size to increase size; stylesheet is already implemented in html on the top*/
+
+.footer-social-icons {
+      font-size: 30px;
+      width: 350px;
+      display:block;
+}
+.social-icon {
+      color: black;
+
+.social-icon:hover{
+   color: lightblack;
+}
