@@ -2,18 +2,22 @@ body{
   background-color: lightgrey;
 }
 
-p{
+#quotes{
   text-align: center;
   position: fixed;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#context{
+
+/*Attributes of TextBox*/
+#box{
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
+  width: 40%;
+  height: 30%;
 }
