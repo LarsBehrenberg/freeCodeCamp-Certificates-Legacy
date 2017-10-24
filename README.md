@@ -2,14 +2,14 @@
 # Free Code Camp Projects
 
 My journey of getting the Front End Development Certificate on FreeCodeCamp.org
-Collection of projects I'm doing while working through the [Free Code Camp](http://www.freecodecamp.com) full stack web developer certifications. Original from KaliaHaze.
+Collection of projects I'm doing while working through the [Free Code Camp](http://www.freecodecamp.com) full stack web developer certifications. Original from [KaliaHaze](https://gist.github.com/KaliaHaze/633e93581ebace3bde6291e745aa209c#file-fcc-project-list-md).
 
 ## Front End Development Certification
 
 ### Basic Front End Development Projects
 
 - [ ] Build a Tribute Page | [Requirements](http://www.freecodecamp.com/challenges/build-a-tribute-page) | Demo | Source Code
-- [ ] Build a Personal Portfolio Page | [Requirements](http://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage) | Demo | Source Code
+- [x] Build a Personal Portfolio Page | [Requirements](http://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage) | [Demo](https://codepen.io/lars281/full/oGBPrP/) | [Source Code](https://codepen.io/lars281/pen/oGBPrP)
 
 ### Intermediate Front End Development Projects
 
