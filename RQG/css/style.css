@@ -2,15 +2,6 @@ body{
   background-color: lightgrey;
 }
 
-#quotes{
-  text-align: center;
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
 /*Attributes of TextBox*/
 #box{
   position: fixed;
@@ -20,4 +11,28 @@ body{
   background-color: white;
   width: 40%;
   height: 30%;
+}
+#footer{
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*Attributes of quotes*/
+#quotes{
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#buttonLeft{
+  position: fixed;
+  top: 75%;
+  left: 10%;
+}
+#buttonRight{
+  position: fixed;
+  top: 75%;
+  left: 75%;
 }
