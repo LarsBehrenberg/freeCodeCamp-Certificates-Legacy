@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>RandomQuoteGenerator</title>
+      <!--css-->
       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
       <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,21 +11,27 @@
 <body>
 <!--TextBox-->
 <div class="well" id="box">
-  <!--First Row-->
-  <!--Second Row-->
+  <!--quotes-->
     <div class="col-md-12" id="quotes">
-        <p>quotes</p>
-    </div>
+        <p>RandomQuoteGenerator</p>
+        </div>
+        <!--Left Button-->
     <div class="col-md-6" id="buttonLeft">
-      <button>test</button>
+      <button>twitter</button>
     </div>
+<!--Right Button-->
     <div class="col-md-6" id="buttonRight">
-      <button type="button">New quote</button>
+      <button type="button" id="newQuote" onclick="testfunction()">New quote</button>
+
       </div>
 </div>
+<!--End of TextBox-->
+<!--footerText-->
 <div class="footer" id="footer">
   <p>test</p>
 </div>
-<!--End of TextBox-->
+
+<!--script-->
+<script src="css/index.js" charset="utf-8"></script>
 </body>
 </html>
