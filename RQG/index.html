@@ -6,6 +6,8 @@
       <!--css-->
       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
       <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
@@ -13,19 +15,21 @@
 <div class="well" id="box">
   <!--quotes-->
     <div class="col-md-12" id="quotes">
-      <p>RandomQuoteGenerator</p>
+      <p id="randomQuote">Welcome to the<br>RandomQuoteGenerator</p>
+      <br>
+      <p style="text-align:right" id="randomAuthor"></p>
     </div>
 
 
 <!--Left Button-->
     <div class="col-md-6" id="buttonLeft">
-      <button>twitter</button>
+      <button type="button" id="newTwitter" class="buttons">twitter</button>
     </div>
 
 
 <!--Right Button-->
     <div class="col-md-6" id="buttonRight">
-      <button type="button" id="newQuote" >New quote</button>
+      <button type="button" id="newQuote" class="buttons" >New quote</button>
     </div>
 
 </div>
@@ -33,10 +37,11 @@
 
 <!--footerText-->
 <div class="footer" id="footer">
-  <p>test</p>
+  <p style="color:white;">test</p>
 </div>
 
 <!--script-->
-<script src="css/index.js" charset="utf-8"></script>
+<script src="css/variables.js" charset="utf-8" type="text/javascript"></script>
+<script src="css/index.js" charset="utf-8" type="text/javascript"></script>
 </body>
 </html>
