@@ -24,4 +24,15 @@ var mapProp= {
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
-getElementById("test").innerHTML = coord[0];
+//Call API
+var xhttp = new XMLHttpRequest();
+var serverResponse = "";
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Action to be performed when the document is read;
+       serverResponse = xhttp.responseText;
+       document.getElementById("testid").innerHTML = serverResponse;
+    }
+};
+xhttp.open("GET","https://fcc-weather-api.glitch.me/api/current?lat=35&lon=139", true);
+xhttp.send();
