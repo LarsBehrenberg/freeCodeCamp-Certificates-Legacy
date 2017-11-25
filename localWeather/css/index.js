@@ -3,9 +3,9 @@ var xhttp = new XMLHttpRequest();
 var serverResponse = "";
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-       // Action to be performed when the document is read;
-       serverResponse =this.responseText
-       document.getElementById("testid").innerHTML = serverResponse;
+       // Action to be performed when the document is ready;
+       var parsed = JSON.parse(this.responseText);
+       document.getElementById("tempre").innerHTML = parsed.main.temp + "°, " + parsed.weather[0].description;
     }
 };
 
@@ -52,7 +52,8 @@ function codeLatLng(lat, lng) {
            for (var i=0; i<results[0].address_components.length; i++) {
           for (var b=0;b<results[0].address_components[i].types.length;b++) {
 
-          //there are different types that might hold a city admin_area_lvl_1 usually does in come cases looking for sublocality type will be more appropriate
+          //there are different types that might hold a city admin_area_lvl_1
+          //usually does in come cases looking for sublocality type will be more appropriate
               if (results[0].address_components[i].types[b] == "administrative_area_level_1") {
                   //this is the object you are looking for
                   city= results[0].address_components[i];
