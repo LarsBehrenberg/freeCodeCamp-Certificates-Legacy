@@ -1,0 +1,32 @@
+body{
+  background-color: slateblue;
+}
+
+/* Text location and color */
+.grid-container{
+  color: white;
+  display: grid;
+  grid-template: auto;
+  text-align: center;
+  margin-top: 20%;
+}
+
+
+/* Search button */
+.fa{
+  color: orange;
+}
+.fa:visited{
+  color: black;
+}
+.fa:hover {
+  color: white;
+}
+
+/* Click here for a random article */
+a:link {
+  text-decoration: none;
+}
+a:hover{
+  color: orange;
+}
