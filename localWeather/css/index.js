@@ -5,8 +5,14 @@ xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Action to be performed when the document is ready;
        var parsed = JSON.parse(this.responseText);
-       document.getElementById("tempre").innerHTML = parsed.main.temp + "°, " + parsed.weather[0].description;
+       document.getElementById("tempre").innerHTML = parsed.main.temp + "°C, " + parsed.weather[0].description;
+       if (parsed.weather[0].description == "scattered clouds") {
+         document.body.style.backgroundImage = parsed.weather[0].icon; //need to do something here!!!
+         //here!!
+
+       }
     }
+
 };
 
 

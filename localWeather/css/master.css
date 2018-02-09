@@ -1,9 +1,13 @@
 body{
   text-align: center;
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 .strong{
   font-weight: bold;
   font-size: 20px;
+}
+
+p, h1{
+  color: white;
 }
