@@ -1,5 +1,5 @@
 body{
-  background-color: slateblue;
+  background-color: lightslategray;
 }
 
 /* Text location and color */
@@ -8,13 +8,13 @@ body{
   display: grid;
   grid-template: auto;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 
 /* Search button */
 .fa{
-  color: orange;
+  color: black;
 }
 .fa:visited{
   color: black;
@@ -28,5 +28,21 @@ a:link {
   text-decoration: none;
 }
 a:hover{
-  color: orange;
+  color: black;
+}
+
+ /* Search field */
+input[type=search] {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-image: url("http://www.iconhot.com/icon/png/token/256/search-89.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left;
+  padding: 5px 20px 5px 35px;
+  outline: none;
+}
+
+input[type=search]:focus{
 }
