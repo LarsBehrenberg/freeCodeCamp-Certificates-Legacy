@@ -1,13 +1,11 @@
-body{
-  text-align: center;
-  background-color: grey;
+body, img, div {
+    text-align: center;
+    color: black;
+    background-color: lightgray;
 }
 
-.strong{
-  font-weight: bold;
-  font-size: 20px;
-}
-
-p, h1{
-  color: white;
+#icon {
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
 }
