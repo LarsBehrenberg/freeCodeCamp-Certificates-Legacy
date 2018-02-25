@@ -4,24 +4,17 @@ body{
   padding-top: 5%;
   font-size: 20px;
 }
-
-
 /* Click here for a random article */
 a:link {
   color: black;
   text-decoration: none;
 }
-
 a:visited {
   color: black;
 }
-
 a:hover{
   color: rgb(56, 56, 56);
 }
-
-
-
  /* Search field */
 input[type=search] {
   font-size: 18px;
@@ -35,20 +28,17 @@ input[type=search] {
   padding: 10px 20px 10px 35px;
   outline: none;
 }
-
 input::placeholder{
   font-size:18px;
   text-align: center;
 }
-
+ /* Results after searching */
 .result {
   margin: 2% 20%;
   border: 2px solid black;
   border-radius: 10px;
   background-color: lightgray;
 }
-
 .result:hover{
   background-color: bisque;
-  
 }
