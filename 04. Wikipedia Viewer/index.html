@@ -5,23 +5,19 @@
     <meta charset="utf-8">
     <title>wikipediaViewer</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script src="assets/index.js" charset="utf-8"></script>
   </head>
 
   <body>
-    <div class="grid-container">
-      <div class="grid-item">
+    <div id="main">
         <p><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a></p>
-        <form>
-            <input type="search" results="5" name="s" placeholder="Search..."> 
+        <form name="myForm"  onsubmit="searchInput(); return false">
+            <input type="search" name="searchField" placeholder="Search...">
         </form>
         <p>Hit enter to search</p>
-      </div>
+        
     </div>
-
-
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-    <script src="assets/index.js" charset="utf-8"></script>
+    <div id="second"></div>
   </body>
 </html>
