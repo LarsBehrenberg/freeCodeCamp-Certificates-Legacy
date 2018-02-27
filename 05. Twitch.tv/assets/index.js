@@ -1,38 +1,37 @@
-var twitchChannels = [];
+var twitchChannels = [
+    "zentenlol",
+    "ESL_SC2",
+    "freecodecamp"
+];
+
+var endpoint_ch = "https://wind-bow.gomix.me/twitch-api/channels/";
+var endpoint_st = "https://wind-bow.gomix.me/twitch-api/streams/";
     
 window.onload = function(){
-        $.getJSON("https://wind-bow.gomix.me/twitch-api/streams/zentenlol?callback=?", function(data) {
-            twitchChannels.push(data.stream);
 
-           $.getJSON("https://wind-bow.gomix.me/twitch-api/streams/ESL_SC2?callback=?", function(data) {
-                twitchChannels.push(data.stream);
+    for (var x = 0; x < twitchChannels.length; x++) {
+        $.getJSON(endpoint_ch + twitchChannels[x] + "?callback=?", function(data){
+            console.log(data);
+            var streamTitle = document.createElement("div");
+            streamTitle.setAttribute("class", "ptitle");
 
-                $.getJSON("https://wind-bow.gomix.me/twitch-api/streams/freecodecamp?callback=?", function(data) {
-                    twitchChannels.push(data.stream);
-                    for(var x = 0; x < twitchChannels.length; x++){
-                        console.log(twitchChannels[x].game)
-                        
-                    }
-                });
-            });
+            var streamDescription = document.createElement("div");
+            streamDescription.setAttribute("class", "pdescription");
+
+            var channelDiv = document.getElementById("channelName");
+            channelDiv.appendChild(streamTitle);
+            channelDiv.appendChild(streamDescription);
+            streamTitle.innerHTML = data.display_name;
+            streamDescription.innerHTML = data.status;
         });
+    }
+
 } //end of window.onload
 
 function myFunction() {
     document.getElementById("list").style.color = "red";
 }
 
-// if (data.stream != null) {
-//     var newDiv = document.createElement("div");
-//     newDiv.setAttribute("id", x);
-//     newDiv.setAttribute("class", "result");
-
-//     var channelsDiv = document.getElementById("channels");
-//     channelsDiv.appendChild(newDiv);
-
-//     document.getElementById(x).innerHTML = data.stream.channel.status;
-//     // console.log(data.stream.channel.status);
-// }
-// else {
-//     console.log("OFFLINE");
-// }
+// $.getJSON("zentenlol?callback=?", function(data){
+//     console.log(data);
+// });
