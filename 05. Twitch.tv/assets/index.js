@@ -9,20 +9,25 @@ var endpoint_st = "https://wind-bow.gomix.me/twitch-api/streams/";
     
 window.onload = function(){
 
-    for (var x = 0; x < twitchChannels.length; x++) {
+    for (var x = 0; x < twitchChannels.length ; x++) {
         $.getJSON(endpoint_ch + twitchChannels[x] + "?callback=?", function(data){
-            console.log(data);
-            var streamTitle = document.createElement("div");
-            streamTitle.setAttribute("class", "ptitle");
+            
+           // twitchChannels[x] = data.description;
+            
+            
+            console.log(twitchChannels);
+            // console.log(data);
+            // var streamTitle = document.createElement("div");
+            // streamTitle.setAttribute("class", "ptitle");
 
-            var streamDescription = document.createElement("div");
-            streamDescription.setAttribute("class", "pdescription");
+            // var streamDescription = document.createElement("div");
+            // streamDescription.setAttribute("class", "pdescription");
 
-            var channelDiv = document.getElementById("channelName");
-            channelDiv.appendChild(streamTitle);
-            channelDiv.appendChild(streamDescription);
-            streamTitle.innerHTML = data.display_name;
-            streamDescription.innerHTML = data.status;
+            // var channelDiv = document.getElementById("channelName");
+            // channelDiv.appendChild(streamTitle);
+            // channelDiv.appendChild(streamDescription);
+            // streamTitle.innerHTML = data.display_name;
+            // streamDescription.innerHTML = data.status;
         });
     }
 
