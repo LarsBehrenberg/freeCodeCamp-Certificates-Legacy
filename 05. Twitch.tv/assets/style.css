@@ -1,53 +1,62 @@
-/* body {
+body{
     background-color: black;
-} */
-
-#main {
-    background-color: gray;
-    width: 500px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 15px;
-    border-radius: 10px;
 }
 
-h1 {
+.container-fixed {
+    background-color: gray;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    width: 700px;
+}
+
+.row{
+    padding: 0 30px;
+}
+
+h1{
     text-align: center;
     text-decoration: underline;
 }
 
-ul {
+/* Horizontal Main Menu */
+ul{
     list-style:none;
     margin:0;
     padding:0;
     text-align:center;
 }
 
-li {
+li{
     display: inline;
 }
 
-li a {
+li a{
     display:inline-block;
     font-size: 20px;
     padding:0 45px;
 }
 
+li:hover{
+    color: white;
+}
+
+a:link{
+    color: black;
+}
+
+strong a:hover{
+    text-decoration: none;
+}
+
 /* Resizing Images */
-img {
+.icon {
     width: 60px;
     height: 60px;
-    margin: 10px 0 10px 20px;
+    margin: 0 0 10px 0;
     border-radius: 30px;
 }
 
-/* Title & Description */
-
-.ptitle, .pdescription{
-    margin-left: 100px;
+.onlinestatus {
+    width:40px;
+    height:40px
 }
-
-.pdescription{
-    margin-bottom: 30px;
-} 

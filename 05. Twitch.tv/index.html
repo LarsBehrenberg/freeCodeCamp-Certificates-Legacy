@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="assets/index.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1>Twitch.tv App</h1>
-        <ul id="list">
-            <li onclick="myFunction()"><a>All</a></li>
-            <li><a>Online</a></li>
-            <li><a>Offline</a></li>
-        </ul>
-        <div id="channels">
-            <hr>
-            <div id="channelName"></div>
-            <div id="channelIcon"></div>
+    <div class="container-fixed" id="loading">
+        <div class="row" id="">
+            <div class="col-12">
+                <h1>Twitch.tv App</h1>
+            </div>
+            <div class="col-12">
+                <ul id="list">
+                <li onclick="allDisplay()"><a>All</a></li>
+                <li onclick="onlineDisplay()"><a>Online</a></li>
+                <li onclick="offlineDisplay()"><a>Offline</a></li>
+            </ul><hr>
+            </div>
         </div>
     </div>
 </body>
