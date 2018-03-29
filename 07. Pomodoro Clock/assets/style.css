@@ -1,0 +1,40 @@
+body{
+    background-color: #333333;
+    color: white;
+}
+
+
+/* Break/SessionLength div */
+#adjustDiv{
+    width: 400px;
+    margin: 50px auto auto auto;]
+}
+
+/* Break/SessionLength buttons */
+button{
+    border: none;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+/* button:focus {outline:0;} */
+
+/* clockDiv && insides */
+#clockDiv{
+    border: 2px solid silver;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto auto auto;
+
+}
+
+#sessionText{
+    margin: 100px auto auto auto;
+}
+
+#countText{
+    margin: 100px auto auto auto;
+}
+
+
