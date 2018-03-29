@@ -3,18 +3,25 @@
     margin-top: 5%;
 }
 
-.result {
-    text-align: right;
-}
-.button{
-    text-align: center;
-    padding: 1em;
-}
-button{
-    margin: 5%;
-    padding: 1em;
-    width: 60px;
-}
 .result{
     background-color: lightgray;
+}
+
+.resultDiv{
+    text-align: right;
+}
+.resultButton{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.numberblock div{
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+button{
+    width: 4rem;
+    height: 4rem;
 }
