@@ -1,0 +1,17 @@
+body{
+    background-color: #333333;
+    color: white;
+}
+
+#headline{
+    margin: 3rem auto 2rem auto;
+}
+
+#row {
+    border: 1px solid white;
+}
+.boxes{
+    border: 1px solid white;
+    height: 100px;
+}
+
