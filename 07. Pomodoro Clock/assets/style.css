@@ -1,3 +1,4 @@
+/* Genereal body css */
 body{
     background-color: #333333;
     color: white;
@@ -17,24 +18,22 @@ button{
     color: white;
     text-decoration: none;
 }
-/* button:focus {outline:0;} */
+button:focus {outline:0;}
 
 /* clockDiv && insides */
 #clockDiv{
-    border: 2px solid silver;
+    border: 2px solid greenyellow;
     border-radius: 50%;
     width: 400px;
     height: 400px;
-    margin: 50px auto auto auto;
-
+    margin: 40px auto auto auto;
 }
 
 #sessionText{
-    margin: 100px auto auto auto;
+    margin: 80px auto auto auto;
+    font-size: 3rem;
 }
-
 #countText{
-    margin: 100px auto auto auto;
+    margin: 20px auto auto auto;
+    font-size: 3rem;
 }
-
-

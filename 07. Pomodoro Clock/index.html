@@ -23,6 +23,7 @@
                 <span>Break length</span><br>
                 <button onclick="breakLengthDecrease()">-</button>
                 <span id="breakLength">5</span>
+                <span>min</span>
                 <button onclick="breakLengthIncrease()">+</button>
             </div>
 
@@ -31,15 +32,18 @@
                 <span>Session length</span><br>
                 <button onclick="sessionLengthDecrease()">-</button>
                 <span id="sessionLength">25</span>
+                <span>min</span>
                 <button onclick="sessionLengthIncrease()">+</button>
             </div>
         </div>
 
         <!-- Clock circle div -->
-        <div class="row" id="clockDiv">
+        <div class="row" id="clockDiv" onclick="startTimer()">
             <div class="col-12">
-                <h1 id="sessionText">Start</h1>
-                <h1 id="countText">0:00</h1>
+                <button id="sessionText">Start</button><hr>
+                <span>Current:</span><br><br>
+                <span id="currentSession"></span><br>
+                <button id="countText">0:00</button>
             </div>
         </div>
     </div>
