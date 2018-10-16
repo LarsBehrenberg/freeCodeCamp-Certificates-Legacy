@@ -17,8 +17,8 @@
                     <h1>TicTacToe</h1>
                 </div>
             </div>
-            <div class="row"  id="row">
-                <div class="col-4 boxes">test</div>
+            <div class="row"  id="playfield">
+                <div class="col-4 boxes" onclick="minimax([0,1,2,3,4,5,6,7,8], humanPlayer)">test</div>
                 <div class="col-4 boxes">test</div>
                 <div class="col-4 boxes">test</div>
                 <div class="col-4 boxes">test</div>
@@ -28,8 +28,16 @@
                 <div class="col-4 boxes">test</div>
                 <div class="col-4 boxes">test</div>
             </div>
+            <div class="row" id="chooseOptions">
+                <div class="col-12" id="optionTitle">
+                    <h5>Which one do you wanna play?</h5>
+                </div>
+                <div class="col-12" id="optionButtons">
+                    <button id="oButton" onclick="oButtonClick()">O</button>
+                    <button id="xButton" onclick="xButtonClick()">X</button>
+                </div>
+            </div>
         </div>
-                
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,9 +1,14 @@
+/* REMOVE LATER; CURRENTLY JUST FOR TESTING */
+/* div{
+    border: 1px solid white;
+} */
+
 /* Genereal body css */
 body{
     background-color: #333333;
     color: white;
+    text-align: center;
 }
-
 
 /* Break/SessionLength div */
 #adjustDiv{
@@ -36,4 +41,8 @@ button:focus {outline:0;}
 #countText{
     margin: 20px auto auto auto;
     font-size: 3rem;
+}
+
+.currentCount {
+    margin: auto auto auto auto;
 }

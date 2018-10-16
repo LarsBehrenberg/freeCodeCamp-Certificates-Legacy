@@ -7,11 +7,33 @@ body{
     margin: 3rem auto 2rem auto;
 }
 
-#row {
+/* The playfield and insides css */
+#playfield {
     border: 1px solid white;
+    width: 300px;
+    margin: auto;
 }
+
 .boxes{
     border: 1px solid white;
     height: 100px;
+    padding: 40px 0;
 }
 
+/* The options menu below */
+#chooseOptions{
+    margin-top: 3rem;
+}
+
+/* Buttons of the option menu */
+button{
+    margin: 1rem 2rem;
+    width: 2rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
