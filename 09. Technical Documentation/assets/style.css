@@ -1,0 +1,52 @@
+/* Styling left nav side bar */
+nav{
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: lightgray;
+    border-right: 1px solid black;
+}
+
+nav header{
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: gray;
+}
+
+/* Styling main content */
+main{
+    margin-left: 150px;
+}
+
+main section header{
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main section {
+    padding-left: 20px;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+    nav {
+      background-color: white;
+    }
+  }

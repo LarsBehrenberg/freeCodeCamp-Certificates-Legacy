@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML5</header><hr>
+        <a href="#Introduction" class="nav-link">Introduction</a><hr>
+        <a href="#Semantics" class="nav-link">Semantics</a><hr>
+        <a href="#Styling" class="nav-link">Styling</a><hr>
+        <a href="#Connectivity" class="nav-link">Connectivity</a><hr>
+        <a href="#Multimedia" class="nav-link">Multimedia</a><hr>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications. This set is sometimes called HTML5 & friends and often shortened to just HTML5.</p>
+            <p>Designed to be usable by all Open Web developers, this reference page links to numerous resources about HTML5 technologies, classified into several groups based on their function.</p>
+            <ul>
+                <li>Semantics: allowing you to describe more precisely what your content is.</li>
+                <li>Connectivity: allowing you to communicate with the server in new and innovative ways.</li>
+                <li>Offline and storage: allowing webpages to store data on the client-side locally and operate offline more efficiently.</li>
+                <li>Multimedia: making video and audio first-class citizens in the Open Web.</li>
+                <li>2D/3D graphics and effects: allowing a much more diverse range of presentation options.</li>
+                <li>Performance and integration: providing greater speed optimization and better usage of computer hardware.</li>
+                <li>Device access: allowing for the usage of various input and output devices.</li>
+                <li>Styling: letting authors write more sophisticated themes.</li>
+            </ul>
+            <hr>
+        </section>
+        <section class="main-section" id="Semantics" style="margin-top: 20px">
+            <header>Semantics</header>
+            <p>Sections and outlines in HTML5:<br>
+                A look at the new outlining and sectioning elements in HTML5: &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and &lt;aside&gt;.
+                <br><br>Using HTML5 audio and video<br>
+                The <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements embed and allow the manipulation of new multimedia content.
+                <br><br>Forms improvements<br>
+                A look at the constraint validation API, several new attributes, new values for the &lt;input&gt; attribute type and the new &lt;output&gt; element.
+                <br><br>New semantic elements<br>
+                Beside sections, media and forms elements, there are numerous new elements, like &lt;mark&gt;, &lt;figure&gt;, &lt;figcaption&gt;, &lt;data&gt;, &lt;time&gt;, &lt;output&gt;, &lt;progress&gt;, or &lt;meter&gt; and &lt;main&gt;, increasing the number of valid HTML5 elements.
+                <br><br>Improvement in &lt;iframe&gt;<br>
+                Using the sandbox and srcdoc attributes, authors can now be precise about the level of security and the wished rendering of an &lt;iframe&gt; element.
+                <br><br>MathML<br>
+                Allows directly embedding mathematical formulas.
+                <br><br>Introduction to HTML5<br>
+                This article introduces how to indicate to the browser that you are using HTML5 in your web design or web application.
+                <br><br>HTML5 Cheat Sheet<br>
+                A handy HTML 5 cheat sheet for beginners who want to master HTML 5, its elements, event attributes and compatibility.
+                <br><br>HTML5-compliant parser<br>
+                The parser, which turns the bytes of an HTML document into a DOM, has been extended and now precisely defines the behavior to use in all cases, even when faced with invalid HTML. This leads to far greater predictability and interoperability between HTML5-compliant browsers.</p>
+                <hr>
+        </section>
+        <section class="main-section" id="Styling" style="margin-top: 20px;">
+            <header>Styling</header>
+            <p>CSS has been extended to be able to style elements in a much more complex way. This is often referred as CSS3, though CSS is not a monolithic specification any more and the different modules are not all at level 3: some are at level 1 and others at level 4, with all the intermediate levels covered.</p>
+            <br>
+            <p>New background styling features<br>
+                It is now possible to put shadows on elements using box-shadow, multiple backgrounds, and CSS filters. You can learn more about these by reading Advanced box effects.
+                <br><br>More fancy borders<br>
+                Not only it is now possible to use images to style borders, using border-image and its associated longhand properties, but rounded borders are supported via the border-radius property.
+                <br><br>Animating your style<br>
+                Using CSS Transitions to animate between different states or using CSS Animations to animate parts of the page without a triggering event, you can now control mobile elements on your page.
+                <br><br>Typography improvement<br>
+                Authors have better control to reach better typography. They can control text-overflow and hyphenation, but also can add a shadow to it or control more precisely its decorations. Custom typefaces can be downloaded and applied thanks to the new @font-face at-rule.
+                <br><br>New presentational layouts<br>
+                In order to improve the flexibility of designs, two new layouts have been added: the CSS multi-column layouts and CSS flexible box layout.
+            </p>
+            <hr>
+        </section>
+        <section class="main-section" id="Connectivity" style="margin-top: 20px;">
+            <header>Connectivity</header>
+            <p>Web Sockets<br>
+                Allows creating a permanent connection between the page and the server and to exchange non-HTML data through that means.
+                <br><br>Server-sent events<br>
+                Allows a server to push events to a client, rather than the classical paradigm where the server could send data only in response to a client's request.
+                <br><br>WebRTC<br>
+                This technology, where RTC stands for Real-Time Communication, allows connecting to other people and controlling videoconferencing directly in the browser, without the need for a plugin or an external application.</p>
+                <hr>
+        </section>
+        <section class="main-section" id="Multimedia" style="margin-top: 20px;">
+            <header>Multimedia</header>
+            <p>Using HTML5 audio and video<br>
+                The <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements embed and allow the manipulation of new multimedia content.
+            </p>
+            <p>WebRTC<br>
+                This technology, where RTC stands for Real-Time Communication, allows connecting to other people and controlling videoconferencing directly in the browser, without the need for a plugin or an external application.
+            </p>
+            <p>Using the Camera API<br>
+                Allows using, manipulating, and storing an image from the computer's camera.
+            </p>
+            <p>Track and WebVTT<br>
+                The <code>&lt;track&gt;</code> element allows subtitles and chapters. WebVTT is a text track format.</p>
+            
+        </section>
+            </main>
+    
+</body>
+</html>
