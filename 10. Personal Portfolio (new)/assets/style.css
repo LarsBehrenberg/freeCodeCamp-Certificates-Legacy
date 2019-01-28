@@ -1,0 +1,131 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: system-ui, sans-serif;
+}
+#navbar{
+    margin: 0;
+    height: 7vh;
+    background: #455A64;
+    color: white;
+    text-align: right;
+    grid-column: 1 / 3;
+}
+
+@media (min-height: 300px) {
+    nav {
+      position: sticky;
+      top: 0;
+    }
+  }
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 4% 0 0;
+    top: 40%;
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+nav a:hover{
+    color: gray;
+}
+
+main{
+    grid-column: 1 / 3;
+}
+
+#welcome-section{
+    background: #455A64;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+#welcome-section-message{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: 10% auto auto 10%;
+}
+
+.project-header{
+    grid-column: 1 / 5;
+    text-align: center;
+    height: 50px;
+    padding-top: 40px;
+    color: #455A64;
+}
+
+.column1{
+    grid-column: 2 / 3;
+}
+
+.column2{
+    grid-column: 3 / 4;
+}
+
+.project-tile{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    border: 1px solid #455A64;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.project-tile:hover{
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-tile a{
+    text-decoration: none;
+    color: #455A64;
+}
+.project-tile a:visited{
+    color: #455A64;
+}
+.project-tile a:hover{
+    color: black;
+}
+
+.screen{
+    width: 100%;
+    height: 80%;
+    margin: auto auto;
+    border-bottom: 1px solid #455A64;
+}
+
+.screen-title{
+    margin: 4px 0 0 0;
+}
+
+#goodbye-section{
+    height: 20vh;
+    margin-top: 30px;
+    background: #455A64;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.social-icon{
+    color: white;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.social-icon:hover{
+    color: lightgray;
+}
